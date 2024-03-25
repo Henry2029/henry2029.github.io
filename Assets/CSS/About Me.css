@@ -1,0 +1,245 @@
+@font-face {
+    font-family: "Cinzel Regular";
+    src: url(../Fonts/Cinzel/static/Cinzel-Regular.ttf);
+}
+
+body{
+    background-image: url(../IMG/About\ Me.jpg);
+    background-size: cover;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-position: center;
+    color: white;
+    font-family: "Cinzel Regular";
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+nav ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+  
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	font-family: "Cinzel Regular";
+}
+
+li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.img {
+    display: block;
+    width: 340px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+    background-position: left center;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    padding: 4rem 0;
+    text-align: center;
+    display: block;
+}
+
+.title {
+    font-size: 3rem;
+    letter-spacing: -2px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.info {
+    flex: 1;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.woc {
+    font-size: 1.375rem;
+    line-height: 1.65;
+}
+
+h2 {
+    margin-top: 0;
+    position: relative;
+    margin-bottom: .5em;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.2;
+}
+
+p {
+    margin: 0;
+}
+
+.container-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.button1 {
+    --border-radius: 15px;
+    --border-width: 4px;
+    appearance: none;
+    position: relative;
+    padding: 1em 2em;
+    border: 0;
+    background-color: transparent;
+    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 2;
+}
+   
+.button1::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(
+           #488cfb,
+           #29dbbc,
+           #ddf505,
+           #ff9f0e,
+           #e440bb,
+           #655adc,
+           #488cfb
+       );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: paused;
+}
+   
+.button1:hover::after {
+    animation-play-state: running;
+}
+   
+@keyframes rotate-hue {
+    to {
+        filter: hue-rotate(1turn);
+    }
+}
+   
+.button1,
+.button1::after {
+    box-sizing: border-box;
+}
+   
+.button1:active {
+    --border-width: 5px;
+}
+
+.button2 {
+    --border-radius: 15px;
+    --border-width: 4px;
+    appearance: none;
+    position: relative;
+    padding: 1em 2em;
+    border: 0;
+    background-color: transparent;
+    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 2;
+}
+   
+.button2::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(
+           #488cfb,
+           #29dbbc,
+           #ddf505,
+           #ff9f0e,
+           #e440bb,
+           #655adc,
+           #488cfb
+       );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: paused;
+}
+   
+.button2:hover::after {
+    animation-play-state: running;
+}
+   
+@keyframes rotate-hue {
+    to {
+        filter: hue-rotate(1turn);
+    }
+}
+   
+.button2,
+.button2::after {
+    box-sizing: border-box;
+}
+   
+.button2:active {
+    --border-width: 5px;
+}
