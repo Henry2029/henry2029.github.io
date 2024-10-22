@@ -61,6 +61,7 @@ a {
     object-fit: cover;
     margin-right: 20px;
     background-position: left center;
+    border-radius: 20%;
 }
 .container {
     display: flex;
